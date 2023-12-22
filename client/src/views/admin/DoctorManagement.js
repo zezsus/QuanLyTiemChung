@@ -4,27 +4,34 @@ import { icons } from "../../utils/icons";
 import "../../assets/styles/admin/DoctorManagement.scss";
 
 const DoctorManagement = () => {
-  const { IoMdAdd, CiEdit, MdDeleteForever } = icons;
+  const { IoMdAdd, CiEdit, MdDeleteForever, FaSearch } = icons;
   return (
     <div className="doctor-management">
       <div className="header">
         <NavBar />
       </div>
       <div className="container">
-        <div className="button-add">
+        <div className="header-container">
           <button className="btn-add">
             <IoMdAdd size={25} title="Add" />
           </button>
+
+          <div className="search">
+            <input type="text" placeholder="Nhập tên cần tìm kiếm" />
+            <button className="btn-search">
+              <FaSearch size={25} />
+            </button>
+          </div>
         </div>
         <div className="table">
           <table border="1" rules="all">
             <thead>
               <tr>
-                <th>STT</th>
+                <th>Mã Số</th>
                 <th>Họ Tên</th>
-                <th>Số điện thoại</th>
-                <th>Vị trí</th>
-                <th>Hành động</th>
+                <th>Số Điện Thoại</th>
+                <th>Vị Trí</th>
+                <th>Hành Động</th>
               </tr>
             </thead>
             <tbody>

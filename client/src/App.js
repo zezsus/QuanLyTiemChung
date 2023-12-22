@@ -5,12 +5,14 @@ import Home from "./views/Home";
 import PatientManagement from "./views/admin/PatientManagement";
 import VaccineManagement from "./views/admin/VaccineManagement";
 import DoctorManagement from "./views/admin/DoctorManagement";
+import AccountManagement from "./views/admin/AccountManagement";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/sign-in" element={<SignIn />} />
+        <Route path="/account" element={<AccountManagement />} />
         <Route path="/patient" element={<PatientManagement />} />
         <Route path="/vaccine" element={<VaccineManagement />} />
         <Route path="/doctor" element={<DoctorManagement />} />

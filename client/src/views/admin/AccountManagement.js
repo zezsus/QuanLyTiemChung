@@ -1,56 +1,41 @@
 import React from "react";
-import "../../assets/styles/admin/PatinetMangement.scss";
 import NavBar from "../../components/NavBar";
 import { icons } from "../../utils/icons";
+import "../../assets/styles/admin/AccountManagement.scss";
 
-const PatientManagement = () => {
-  const { IoMdAdd, CiEdit, MdDeleteForever, FaSearch } = icons;
+const AccountManagement = () => {
+  const { IoMdAdd, CiEdit, MdDeleteForever } = icons;
 
   return (
-    <div className="patient-management">
+    <div className="account-management">
       <div className="header">
         <NavBar />
       </div>
+
       <div className="container">
         <div className="header-container">
           <button className="btn-add">
             <IoMdAdd title="Add" size={25} />
           </button>
-          <div className="search">
-            <input type="text" placeholder="Nhập tên hoặc mã bệnh nhân..." />
-            <button className="btn-search">
-              <FaSearch size={25} />
-            </button>
-          </div>
         </div>
 
         <div className="table">
           <table border="1" rules="all">
             <thead>
               <tr>
-                <th>Mã Số</th>
-                <th>Họ Tên</th>
-                <th>Ngày Sinh</th>
-                <th>Giới Tính</th>
-                <th>Số BHYT</th>
-                <th>CMTND/CCCD</th>
-                <th>Số Điện Thoại</th>
-                <th>Địa Chỉ</th>
-                <th>Vaccine Tiêm</th>
+                <th>STT</th>
+                <th>Tài Khoản</th>
+                <th>Mật Khẩu</th>
+                <th>Quyền</th>
                 <th>Hành Động</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>1</td>
-                <td>Nguyễn Tuấn Anh</td>
-                <td>20/01/1999</td>
-                <td>Nam</td>
-                <td>8 10 1831471912</td>
-                <td>035201003328</td>
-                <td>0868174218</td>
-                <td>Nghệ An</td>
-                <td>Gam-COVID-Vac</td>
+                <td>demo</td>
+                <td>123</td>
+                <td>Login, logout, thêm, sửa, xóa</td>
                 <td>
                   <div className="button">
                     <CiEdit size={30} title="Edit" className="btn-edit" />
@@ -70,4 +55,4 @@ const PatientManagement = () => {
   );
 };
 
-export default PatientManagement;
+export default AccountManagement;
