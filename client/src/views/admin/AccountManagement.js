@@ -4,7 +4,7 @@ import { icons } from "../../utils/icons";
 import "../../assets/styles/admin/AccountManagement.scss";
 
 const AccountManagement = () => {
-  const { IoMdAdd, CiEdit, MdDeleteForever } = icons;
+  const { IoMdAdd, CiEdit, MdDeleteForever, FaSearch } = icons;
 
   return (
     <div className="account-management">
@@ -17,6 +17,13 @@ const AccountManagement = () => {
           <button className="btn-add">
             <IoMdAdd title="Add" size={25} />
           </button>
+
+          <div className="search">
+            <input type="text" placeholder="Nhập tên tài khoản" />
+            <button className="btn-search">
+              <FaSearch size={25} />
+            </button>
+          </div>
         </div>
 
         <div className="table">

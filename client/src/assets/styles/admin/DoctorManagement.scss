@@ -16,6 +16,7 @@
         padding: 0 0.4rem;
         cursor: pointer;
         height: 2.5rem;
+        transition: all 0.3s;
       }
 
       .search {
@@ -51,6 +52,12 @@
           cursor: pointer;
         }
       }
+    }
+
+    .add-form {
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .table {

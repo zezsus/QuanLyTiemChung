@@ -17,7 +17,10 @@ const PatientManagement = () => {
             <IoMdAdd title="Add" size={25} />
           </button>
           <div className="search">
-            <input type="text" placeholder="Nhập tên hoặc mã bệnh nhân..." />
+            <input
+              type="text"
+              placeholder="Nhập tên hoặc mã của đối tượng tiêm..."
+            />
             <button className="btn-search">
               <FaSearch size={25} />
             </button>
